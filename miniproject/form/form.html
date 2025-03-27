@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Methylation Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <!-- Connect form to result.html with GET method -->
+        <form action="../result/result.html" method="get">
+
+
+            <div class="form-group">
+                <label for="species">Species:</label>
+                <select id="species" name="species" required>
+                    <option value="">Select a species</option>
+                    <option value="rice">Rice</option>
+                    <option value="wheat">Wheat</option>
+                    <option value="maize">Maize</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="promoter_methylation">Promoter Methylation (%):</label>
+                <input type="number" id="promoter_methylation" name="promoter_methylation" min="0" max="100" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gene_methylation">Gene Body Methylation (%):</label>
+                <input type="number" id="gene_methylation" name="gene_methylation" min="0" max="100" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="soil">Soil Moisture (%):</label>
+                <input type="number" id="soil" name="soil" min="0" max="100" step="0.01" required>
+            </div>
+
+            <div class="form-group">
+                <label for="stress">Stress Treatment :</label>
+                <select name="stress" id="stress" required>
+                    <option value="">Select stress treatment</option>
+                    <option value="none">None</option>
+                    <option value="draught">Draught</option>
+                    <option value="salt">Salt</option>
+                    <option value="heat">Heat</option>
+                </select>
+               <!---- <input type="number" id="chg" name="chg" min="0" max="100" step="0.01" required>-->
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

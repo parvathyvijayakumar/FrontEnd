@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant DNA Methylation Results</title>
+    <link rel="stylesheet" href="result.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Plant DNA Methylation Analysis</h1>
+            <p class="subtitle">Comprehensive evaluation of your plant's drought tolerance characteristics</p>
+        </header>
+
+        <div class="results-grid">
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="metric-icon fas fa-tint"></i>
+                    Drought Resistance
+                </div>
+                <div class="metric-value" id="drought-resistance">0</div>
+                <div class="metric-description">
+                    A score from 1 (low) to 10 (high) indicating overall drought tolerance.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="metric-icon fas fa-root-alt"></i>
+                    Root Depth
+                </div>
+                <div class="metric-value" id="root-depth">0 cm</div>
+                <div class="metric-description">
+                    Deeper roots can access water from lower soil layers during drought.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="metric-icon fas fa-leaf"></i>
+                    Leaf Area Index
+                </div>
+                <div class="metric-value" id="leaf-area">0</div>
+                <div class="metric-description">
+                    A measure of the total one-sided green leaf area per unit of ground area
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="metric-icon fas fa-sun"></i>
+                    Photosynthetic Rate
+                </div>
+                <div class="metric-value" id="photo-rate">0 μmol CO₂/m²/s</div>
+                <div class="metric-description">
+                    Efficiency of CO₂ assimilation under water-limited conditions.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="metric-icon fas fa-water"></i>
+                    Water Use Efficiency
+                </div>
+                <div class="metric-value" id="water-efficiency">0</div>
+                <div class="metric-description">
+                    Biomass produced per unit of water consumed.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="metric-icon fas fa-piggy-bank"></i>
+                    Chlorophyll Content
+                </div>
+                <div class="metric-value" id="chlorophyll">0</div>
+                <div class="metric-description">
+                    Chlorophyll retention under the given conditions.
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-title">
+                    <i class="metric-icon fas fa-seedling"></i>
+                    Yield Potential
+                </div>
+                <div class="metric-value" id="yield-potential">0 g/plant</div>
+                <div class="metric-description">
+                    Estimated yield under the given conditions.
+                </div>
+            </div>
+        </div>
+
+        <div class="summary-card">
+            <div class="summary-title">
+                Summary
+            </div>
+            <div class="summary-text" id="summary-text">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="result.js"></script>
+</body>
+</html>
